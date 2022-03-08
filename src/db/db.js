@@ -1,14 +1,16 @@
 const mongoose = require('mongoose');
+db = mongoose
 
+
+//implementando para variável global do mongo via .env
 require ('dotenv').config();
 
-db = mongoose
 
 try{
 db.connect(process.env.MONGO_CONNECT_STRING)
 
 db.Promisse = global.Promise;
-console.log("conectado no banco");
+console.log("DataBase status: 200");
 
 }catch(err){
   console.log(err);
