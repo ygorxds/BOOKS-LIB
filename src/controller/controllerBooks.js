@@ -1,7 +1,4 @@
 const express = require("express");
-const req = require("express/lib/request");
-const res = require("express/lib/response");
-const { default: mongoose } = require("mongoose");
 const Books = require("../model/books");
 const router = express.Router();
 
@@ -16,6 +13,7 @@ router.get("/", async (req, res) => {
     return res.status(400).send({ error: "Erro na busca" });
   }
 })
+
 
 router.post('', async (req, res) => {
 
@@ -44,6 +42,7 @@ router.put("/:id", async (req, res) => {
     return res.status(400).send({ error: "A EDIÇÂO FALHOU CONSAGRADO" });
   }
 });
+
 
 router.delete("/:id", async (req, res) => {
   try {
