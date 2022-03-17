@@ -2,7 +2,7 @@
 # Magalivros
 Esse é o Backend da minha biblioteca de PDF
  
-O Front-end você pode ver no Repositório: https://github.com/ygorxds/Magalivros-FrontEnd/tree/master 
+O Front-end você pode ver no Repositório: https://github.com/ygorxds/MAGALIVROS-FRONTEND 
 Esse Backend está sendo desenvolvido obdescendo os critérios de boas práticas e segurança a partir do modelo MVC, além de criptografar as senhas usando o BcryptJS.
 
 Está sendo usado nesse projeto:
